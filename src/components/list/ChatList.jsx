@@ -31,7 +31,7 @@ function ChatList() {
     
           const chatData = await Promise.all(promises);
     
-          console.log("Chat Data:", chatData); // Debug log to check the data structure
+          console.log("Chat Data:", chatData); 
           setChats(chatData.sort((a, b) => b.updatedAt - a.updatedAt));
         }
       );

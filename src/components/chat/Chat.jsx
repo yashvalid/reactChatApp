@@ -113,7 +113,7 @@ function Chat() {
         </div>
         <div className="center">
             {chat?.messages?.map((message)=>(
-                <div className={message.senderId === CurrUser.id? 'message own' : message} key={message.createdAt}>
+                <div className={message.senderId === CurrUser.id? 'message own' : 'message'} key={message.createdAt}>
                     <div className="texts">
                         {message.img && <img src={message.img} alt="" />}
                         <p>{message.text}</p>

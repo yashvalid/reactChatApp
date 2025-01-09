@@ -8,6 +8,7 @@ import {onSnapshot, doc, updateDoc, getDoc, arrayUnion} from 'firebase/firestore
 import { db } from '../../lib/firebase';
 import { useChatStore } from '../../lib/chatStore';
 import {useUserStore} from '../../lib/userStore'
+import {format} from 'timeago.js'
 
 
 
@@ -45,7 +46,6 @@ function Chat() {
 
     const handleSend = async() =>{
         if(text === "") return;
-
 
         try{
 
@@ -117,7 +117,7 @@ function Chat() {
                     <div className="texts">
                         {message.img && <img src={message.img} alt="" />}
                         <p>{message.text}</p>
-                        <span>1 min ago</span>
+                        <span>{format(message.createdAt.toDate())}</span>
                     </div>
                 </div>
             ))

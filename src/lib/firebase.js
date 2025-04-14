@@ -4,12 +4,12 @@ import {getFirestore} from 'firebase/firestore'
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_API_KEY,
-  authDomain: "reactchatapp-d17f5.firebaseapp.com",
-  projectId: "reactchatapp-d17f5",
-  storageBucket: "reactchatapp-d17f5.firebasestorage.app",
-  messagingSenderId: "78483312709",
-  appId: "1:78483312709:web:74fc0e5d89aaf2cf7cd32c",
-  measurementId: "G-PHKWBM0PJQ"
+  authDomain: "reactrealtimechat-380d7.firebaseapp.com",
+  projectId: "reactrealtimechat-380d7",
+  storageBucket: "reactrealtimechat-380d7.firebasestorage.app",
+  messagingSenderId: "790358212818",
+  appId: "1:790358212818:web:57cebcf809678b50f22d0b",
+  measurementId: "G-RYTPP23FBW"
 };
 
 const app = initializeApp(firebaseConfig);
